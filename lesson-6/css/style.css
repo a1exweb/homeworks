@@ -80,20 +80,20 @@
 	.product-container {
 		width: 90%;
 		height: 90%;   
-  }
-  .product-container img {
+	}
+	.product-container img {
 		width: 300px;
 		margin-right: 59px;
 		margin-left: 18px;
 		margin-top: 40px;
 		margin-bottom: 40px;
-  }
+	}
 	.product-content {
 		width: 300px;
-  }
+	}
 	.product-content h1 {
 		font-size: 20px;
-  }
+	}
 	.product-content p.description {
 		margin-top: 15px;
 		margin-bottom: 20px;
