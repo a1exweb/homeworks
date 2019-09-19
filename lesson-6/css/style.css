@@ -1,0 +1,115 @@
+* {
+	box-sizing: border-box;
+}
+
+.product-container {
+	width: 1010px;
+	height: 503px;
+	margin: 86px auto;
+	background-color: #ffffff;
+	border: 1px solid #d7d7d7;
+}
+
+.product-container img {
+	display: inline-block;
+	float: left;
+	margin: 64px 99px 64px 48px;
+}
+
+.product-content {
+	display: inline-block;
+	width: 393px;
+	margin-top: 94px;
+	margin-bottom: 81px;
+}
+
+.product-content h1 {
+	height: 22px;
+	margin: 0;
+	font-size: 23px;
+	font-family: "Arial - Bold MT", sans-serif;
+	font-weight: 400;
+	color: #2f2f2f;
+}
+
+.product-content p.description {
+	height: 50px;
+	margin-top: 30px;
+	margin-bottom: 55px;
+	margin-left: 1px;
+	font-size: 15px;
+	font-family: "Arial MT", sans-serif;
+	font-weight: 400;
+	color: #2f2f2f;
+}
+
+.product-content .text-price {
+	height: 14px;
+	margin-bottom: 23px;
+	margin-left: 1px;
+	font-size: 15px;
+	font-family: "Arial MT", sans-serif;
+	font-weight: 400;
+	color: #2f2f2f;
+}
+
+.product-content .price {
+	height: 28px;
+	margin-top: 0;
+	margin-bottom: 56px;
+	margin-left: 2px;
+	font-family: "Arial MT", sans-serif;
+	font-size: 30px;
+	font-weight: 400;
+	color: #2f2f2f;
+}
+
+.product-content button {
+	margin-left: 2px;
+	width: 252px;
+	height: 50px;
+	font-family: "Arial MT", sans-serif;
+	font-size: 19px;
+	color: #ffffff;
+	background-color: #ec744a;
+	border: none;
+	cursor: pointer;
+}
+
+ @media (max-width: 991px) {
+          .product-container {
+            width: 90%;
+            height: 90%;   
+          }
+          .product-container img {
+           	width: 300px;
+						margin-right: 59px;
+						margin-left: 18px;
+						margin-top: 40px;
+						margin-bottom: 40px;
+          }
+          .product-content {
+           	width: 300px;
+          }
+          .product-content h1 {
+						font-size: 20px;
+          }
+          .product-content p.description {
+          	margin-top: 15px;
+          	margin-bottom: 20px;
+          	font-size: 12px;
+          }
+          .product-content p.text-price {
+						margin-bottom: 10px;
+          	font-size: 12px;
+          }
+          .product-content p.price {
+          	margin-bottom: 26px;
+          	font-size: 27px;
+          }
+          .product-content button {
+          	width: 242px;
+						height: 40px;
+						font-size: 16px;
+          }
+        }
