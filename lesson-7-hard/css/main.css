@@ -11,8 +11,8 @@ body, h1, h2, p {
 /*Главный экран*/
 header {
 	display: flex;
+	justify-content: center;
 	margin-top: 77px;
-	margin-left: 123px;
 }
 
 header h1 {
