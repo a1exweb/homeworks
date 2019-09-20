@@ -161,6 +161,17 @@ footer .wrap-footer .block-photos img {
 	max-width: 261px;
 }
 
+footer .wrap-footer .block-photos .photo {
+	margin-right: 30px;
+	width: 261px;
+	height: 261px;
+	text-align: center;
+}
+
+footer .wrap-footer .block-photos .photo:last-child {
+	margin: 0;
+}
+
 footer .wrap-footer .block-photos_second {
 	margin-bottom: 111px;
 }
