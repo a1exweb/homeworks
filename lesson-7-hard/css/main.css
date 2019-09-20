@@ -13,6 +13,7 @@ header .wrap-header {
 	display: flex;
 	justify-content: center;
 	margin-top: 77px;
+	margin-bottom: 96px;
 }
 
 header .wrap-header h1 {
@@ -25,10 +26,6 @@ header .wrap-header h2 {
 	margin-bottom: 35px;
 	font-size: 30px;
 	font-weight: 400;
-}
-
-header .wrap-header img {
-	margin-bottom: 96px;
 }
 
 header .wrap-header .description-block {
