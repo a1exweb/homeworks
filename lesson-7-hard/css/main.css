@@ -77,26 +77,26 @@ header .wrap-header .more-details {
 }
 
 /*Доставка и оплата*/
-main {
+main .wrap-main {
 	display: flex;
 	flex-direction: column;
 	border: 1px solid #ffffff;
 	background-color: #f2f2f2;
 }
 
-main h2 {
+main .wrap-main h2 {
 	margin-top: 89px;
 	margin-bottom: 91px;
 	text-align: center;
 }
 
-main {
+main .wrap-main {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 }
 
-main .block-icons {
+main .wrap-main .block-icons {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -126,26 +126,26 @@ main .block-icons {
 }
 
 /*Кто уже купил эту книгу*/
-footer {
+footer .wrap-footer {
 	display: flex;
 	flex-direction: column;
 }
 
-footer h2 {
+footer .wrap-footer h2 {
 	margin-top: 89px;
 	margin-bottom: 69px;
 	text-align: center;
 }
 
-footer .block-photos {
+footer .wrap-footer .block-photos {
 	display: flex;
 	justify-content: space-around;
 }
 
-footer .block-photos {
+footer .wrap-footer .block-photos {
 	margin: 0 123px 60px 123px;
 }
 
-footer .block-photos_second {
+footer .wrap-footer .block-photos_second {
 	margin-bottom: 111px;
 }
