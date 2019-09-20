@@ -152,7 +152,8 @@ footer .wrap-footer .block-photos img:last-child {
 }
 
 footer .wrap-footer .block-photos {
-	margin: 0 123px 60px 123px;
+	/* margin: 0 123px 60px 123px; */
+	margin-bottom: 40px;
 }
 
 footer .wrap-footer .block-photos_second {
