@@ -8,7 +8,7 @@ body {
 
 .product-container {
   display: flex;
-	width: 1010px;
+	max-width: 1010px;
 	height: 503px;
 	margin: 86px auto;
 	background-color: #ffffff;
