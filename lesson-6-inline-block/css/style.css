@@ -15,13 +15,15 @@ body, h1, p {
 }
 
 .product-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   max-width: 1010px;
   width: 90%;
   max-height: 503px;
-  height: 90%;
-  margin: 238px auto;
   background-color: #ffffff;
   border: 1px solid #d7d7d7;
+  transform: translate(-50%, -50%);
 }
 
 .product-container img {
