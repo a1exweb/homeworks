@@ -1,0 +1,145 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: "Tahoma", "Arial", sans-serif;
+}
+body, h1, h2, p {
+	margin: 0;
+}
+
+/*Главный экран*/
+header {
+	display: flex;
+	margin-top: 77px;
+	margin-left: 123px;
+}
+
+header h1 {
+	margin-bottom: 15px;
+	font-size: 48px;
+	font-weight: 700;
+}
+
+header h2 {
+	margin-bottom: 35px;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+header img {
+	margin-bottom: 96px;
+}
+
+header .description-block {
+	width: 526px;
+	margin-left: 75px;
+}
+
+header .description {
+	margin-bottom: 47px;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 27px;
+}
+
+header .price {
+	margin-bottom: 53px;
+	font-size: 48px;
+	font-weight: 400;
+	line-height: 27px;
+	color: #313131;
+}
+
+header .buy {
+	margin-right: 40px;
+	width: 175px;
+	height: 67px;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 27px;
+	border-radius: 5px;
+	background-color: #f05a22;
+	border: none;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+header .more-details {
+	width: 287px;
+	height: 67px;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 27px;
+	border-radius: 5px;
+	border: 2px solid #f05a22;
+	background: transparent;
+	color: #f05a22;
+	cursor: pointer;
+}
+
+/*Доставка и оплата*/
+main {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #ffffff;
+	background-color: #f2f2f2;
+}
+
+main h2 {
+	margin-top: 89px;
+	margin-bottom: 91px;
+	text-align: center;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+main .block-icons {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	text-align: center;
+	margin: 0 123px;
+}
+
+.icon img {
+	margin-bottom: 16px;
+}
+
+.icon p {
+	margin-bottom: 103px;
+	font-family: "Open Sans", "Tahoma", "Arial", sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 22px;
+	color: #333333;
+}
+
+/*Кто уже купил эту книгу*/
+footer {
+	display: flex;
+	flex-direction: column;
+}
+
+footer h2 {
+	margin-top: 89px;
+	margin-bottom: 69px;
+	text-align: center;
+}
+
+footer .block-photos {
+	display: flex;
+	justify-content: space-around;
+}
+
+footer .block-photos {
+	margin: 0 123px 60px 123px;
+}
+
+footer .block-photos_second {
+	margin-bottom: 111px;
+}
