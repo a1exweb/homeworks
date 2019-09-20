@@ -9,41 +9,42 @@ body, h1, h2, p {
 }
 
 /*Главный экран*/
-header {
+header .wrap-header {
 	display: flex;
 	justify-content: center;
 	margin-top: 77px;
 }
 
-header h1 {
+header .wrap-header h1 {
 	margin-bottom: 15px;
 	font-size: 48px;
 	font-weight: 700;
 }
 
-header h2 {
+header .wrap-header h2 {
 	margin-bottom: 35px;
 	font-size: 30px;
 	font-weight: 400;
 }
 
-header img {
+header .wrap-header img {
 	margin-bottom: 96px;
 }
 
-header .description-block {
+header .wrap-header .description-block {
+	margin-top: 60px;
 	width: 526px;
 	margin-left: 75px;
 }
 
-header .description {
+header .wrap-header .description {
 	margin-bottom: 47px;
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 27px;
 }
 
-header .price {
+header .wrap-header .price {
 	margin-bottom: 53px;
 	font-size: 48px;
 	font-weight: 400;
@@ -51,7 +52,7 @@ header .price {
 	color: #313131;
 }
 
-header .buy {
+header .wrap-header .buy {
 	margin-right: 40px;
 	width: 175px;
 	height: 67px;
@@ -65,7 +66,7 @@ header .buy {
 	cursor: pointer;
 }
 
-header .more-details {
+header .wrap-header .more-details {
 	width: 287px;
 	height: 67px;
 	font-size: 24px;
@@ -106,11 +107,19 @@ main .block-icons {
 	margin: 0 123px;
 }
 
-.icon img {
+.icon {
+	display: flex;
+	justify-content: center;
+	height: 58px;
+}
+
+.icon-wrap img {
 	margin-bottom: 16px;
 }
 
-.icon p {
+.icon-wrap span {
+	display: flex;
+	text-align: center;
 	margin-bottom: 103px;
 	font-family: "Open Sans", "Tahoma", "Arial", sans-serif;
 	font-size: 18px;
