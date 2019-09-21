@@ -7,13 +7,13 @@
 body {
 	height: 100vh;
 	max-width: 1800px;
-	background: url("../img/background.jpg") #d0d6e6 no-repeat bottom fixed;
 	font-family: "Tahoma", "Arial", sans-serif;
+	background: url("../img/background.jpg") #d0d6e6 no-repeat bottom fixed;
 }
 
 a {
-	color: #000f40;
 	text-decoration: none;
+	color: #000f40;
 }
 
 h1 {
@@ -34,18 +34,21 @@ main {
 }
 
 .main-wrap {
+	padding: 10px;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
 	width: 50%;
+	background: rgba(255,255,255, 0.2);
+	border-radius: 5px;
 }
 
 .main-wrap .list-main {
-	font-size: 14px;
 	margin-top: 30px;
 	margin-left: 20px;
-	list-style: none;
 	max-height: 400px;
+	font-size: 14px;
+	list-style: none;
 	overflow-y: scroll;
 }
 
