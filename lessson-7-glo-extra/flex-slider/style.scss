@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: 'Bad Script', sans-serif;
+}
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.item {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #aeaeae;
+  flex-basis: 25%;
+  transition: all .2s;
+  &:hover {
+    flex-basis: 100%;
+  }
+  span {
+    font-size: 2rem;
+    text-shadow: 0px 0px 10px #000;
+  }
+}
+.item-1 {
+  background: url("https://avatars.mds.yandex.net/get-zen_doc/912331/pub_5b716f505e6f9100a9900b5e_5b79e19e2c8e9b00adbe5672/scale_1200") no-repeat center center;
+  background-size: cover;
+}
+
+.item-2 {
+  background: url("https://williamskunkelcpa.com/wp-content/uploads/2016/10/happy-couple-valentines-day.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.item-3 {
+  background: url("https://blurstyle.com/wp-content/uploads/2016/05/Open-your-senses-and-feel-the-magic-of-the-unknown.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.item-4 {
+  background: url("https://avatars.mds.yandex.net/get-pdb/770122/6872593f-20d7-4180-947c-d1ae29d55524/s1200?webp=false") no-repeat center center;
+  background-size: cover;
+}
+
+@media (max-width: 640px) {
+  .slider {
+    height: 100vh;
+    flex-direction: column;
+  }
+  .item {
+    width: 100%;
+    &:hover {
+      flex-grow: 30%;
+    }
+  }
+}
