@@ -6,7 +6,6 @@
     display: flex;
   }
 }
-
 @media (max-width: 1199px) {
   html {
     font-size: 6px;
@@ -15,13 +14,11 @@
     display: flex;
   }
 }
-
 @media (max-width: 991px) {
   html {
     font-size: 5px;
   }
 }
-
 @media (max-width: 720px) {
   .main img {
     width: 29.2rem;
@@ -51,7 +48,6 @@
     flex-direction: row;
   }
 }
-
 @media (max-width: 620px) {
   .main img {
     top: 120px;
@@ -59,7 +55,6 @@
     height: 9.1rem;
   }
 }
-
 @media (max-width: 520px) {
   .block-photo-wrap {
     display: flex;

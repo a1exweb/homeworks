@@ -46,7 +46,6 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* margin-right: 230px; */
   max-width: 50rem;
 }
 .main-content .main-title {
@@ -141,7 +140,7 @@ html {
   max-height: 8.5rem;
 }
 .about .icon-block p {
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 
 .people {
