@@ -9,7 +9,7 @@ html {
   font-size: 10px;
 }
 /* Главный экран */
-.wrapper {
+.container {
   width: 70%;
   max-width: 1140px;
   margin: 0 auto;
@@ -124,7 +124,7 @@ html {
   margin-bottom: 10rem;
   font-size: 4.8rem;
 }
-.about .block-icons {
+.about .wrapper-icons {
   display: flex;
   justify-content: space-between;
 }
@@ -194,7 +194,7 @@ html {
   color: #ffffff;
   text-decoration: none;
 }
-.footer .wrapper {
+.footer .container {
   display: flex;
 }
 .blocks-wrap {

@@ -16,11 +16,7 @@
   }
 }
 
-@media (max-width: 991px) {
-  html {
-    font-size: 5px;
-  }
-}
+
 
 @media (max-width: 720px) {
   .main img {
