@@ -59,3 +59,17 @@
     height: 9.1rem;
   }
 }
+
+@media (max-width: 520px) {
+  .block-photo-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .block-photo .photo {
+    margin-bottom: 3rem;
+  }
+  .footer .blocks-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+}
