@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  height: 500px;
+  background-color: rgba(0,0,0,.1);
+  justify-content: space-around;
+  align-items: center;
+  /* flex-direction: column; */
+  /* flex-wrap: wrap; */
+  /* align-content: space-between; */
+}
+
+.item {
+  background-color: #ccc;
+  border: 1px solid red;
+  flex-basis: 100px;
+  text-align: center;
+}
+
+.active {
+  order: 1;
+  /* flex-basis: 40%; */
+  /* flex-grow: 1; */
+  /* flex-shrink: 2; */
+  align-self: flex-end;
+  text-align: center;
+  background-color: #f0f;
+  color: #fff;
+}
+
+.active-1 {
+  align-self: flex-start;
+}

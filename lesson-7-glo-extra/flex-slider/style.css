@@ -1,0 +1,91 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: 'Bad Script', sans-serif;
+}
+
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+}
+
+.item {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #aeaeae;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.item:hover {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.item span {
+  font-size: 2rem;
+  text-shadow: 0px 0px 10px #000;
+}
+
+.item-1 {
+  background: url("https://avatars.mds.yandex.net/get-zen_doc/912331/pub_5b716f505e6f9100a9900b5e_5b79e19e2c8e9b00adbe5672/scale_1200") no-repeat center center;
+  background-size: cover;
+}
+
+.item-2 {
+  background: url("https://williamskunkelcpa.com/wp-content/uploads/2016/10/happy-couple-valentines-day.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.item-3 {
+  background: url("https://blurstyle.com/wp-content/uploads/2016/05/Open-your-senses-and-feel-the-magic-of-the-unknown.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.item-4 {
+  background: url("https://avatars.mds.yandex.net/get-pdb/770122/6872593f-20d7-4180-947c-d1ae29d55524/s1200?webp=false") no-repeat center center;
+  background-size: cover;
+}
+
+@media (max-width: 640px) {
+  .slider {
+    height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .item {
+    width: 100%;
+  }
+  .item:hover {
+    -webkit-box-flex: 30%;
+        -ms-flex-positive: 30%;
+            flex-grow: 30%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
