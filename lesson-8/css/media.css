@@ -16,14 +16,18 @@
   }
 }
 
-
+@media (max-width: 991px) {
+  html {
+    font-size: 5px;
+  }
+}
 
 @media (max-width: 720px) {
   .main img {
     width: 29.2rem;
     height: 19.1rem;
   }
-  .about .block-icons {
+  .about .wrapper-icons {
     display: flex;
     flex-direction: column;
   }
