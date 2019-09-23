@@ -72,4 +72,11 @@
     display: flex;
     flex-direction: column;
   }
+  .block-requisites, .block-info {
+    margin-right: 0;
+    margin-bottom: 5rem;
+  }
+  .footer a, .footer span {
+    margin-bottom: 2rem;
+  }
 }
