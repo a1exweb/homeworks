@@ -19,8 +19,8 @@
 	<main>
 		<div class="main-wrap">
 			<h2>Список домашних работ:</h2>
-			<button class="open">Открыть все уроки</button>
-			<button class="close">Закрыть все уроки</button>
+			<button class="open">Открыть-закрыть</button>
+			<!-- <button class="close">Закрыть все уроки</button> -->
 			<ul class="list-main">
 				<!-- Урок №1 (Этапы создания сайтов) -->
 				<li class="list-main--item">
@@ -188,21 +188,31 @@
 		</div>
 	</main>
 
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <!-- <script>
   	$(function(){
   		var open = $(".open");
   		var close = $(".close");
   		var details = $("summary");
   		open.on('click', function(event){
   			details.click();
-  			open.toggleClass('open--active');
-  			close.toggleClass('close--active');
+  			open.toggleClass('open__active');
+  			close.toggleClass('close__active');
   		});
   		close.on('click', function(event){
   			details.click();
-  			close.removeClass('close--active');
-  			open.removeClass('open--active');
+  			close.removeClass('close__active');
+  			open.removeClass('open__active');
+  		});
+  	});
+  </script> -->
+   <script>
+  	$(function(){
+  		var open = $(".open");
+  		var details = $("summary");
+  		open.on('click', function(event){
+  			details.click();
   		});
   	});
   </script>
