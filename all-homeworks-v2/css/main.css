@@ -1,0 +1,206 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+
+body {
+	height: 100vh;
+	max-width: 1800px;
+	font-family: "Tahoma", "Arial", sans-serif;
+	background: url("../img/background.jpg") #d0d6e6 no-repeat bottom fixed;
+}
+
+a {
+	text-decoration: none;
+	color: #000f40;
+}
+
+h1 {
+	margin-top: 20px;
+	margin-right: 20px;
+	font-size: 26px;
+	margin-bottom: 20px;
+}
+
+h2 {
+	margin-left: 18px;
+	margin-top: 5px;
+}
+
+.header-wrap {
+	display: flex;
+	justify-content: flex-end;
+}
+
+main {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.main-wrap {
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 50%;
+	background: rgba(255,255,255,.2);
+	border-radius: 5px;
+}
+
+.main-wrap .list-main {
+	margin-top: 30px;
+	margin-left: 20px;
+	max-height: 400px;
+	font-size: 14px;
+	list-style: none;
+	overflow-y: scroll;
+}
+
+.main-wrap .list-main .list-main--title {
+	font-weight: bold;
+}
+
+.main-wrap .list-second {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+}
+
+a:hover {
+	color: #fff;
+	transition: 0.5s;
+}
+
+::-webkit-scrollbar-thumb {
+-webkit-border-radius: 5px;
+border-radius: 5px;
+background: url("../img/scroll.png") #d0d6e6 no-repeat center;
+}
+
+::-webkit-scrollbar{
+width: 11px;
+}
+
+/*Для details и summary*/
+summary {
+    cursor: pointer;
+}
+
+details[open] a {
+    color: #000777;
+}
+
+details a:hover {
+    color:  #fff;
+}
+
+summary:hover {
+    color: #fff;
+}
+
+details {
+color: #363636;
+margin: 0 0 .4em;
+padding: 1%;
+}
+
+@keyframes openDetails {
+	0% {
+		opacity: 0;
+		transform: translateY(-100%);
+	}
+	
+	75% {
+		opacity: .1;
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes closeDetails {
+	0% {
+		opacity: .5;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+details[open] {
+background: rgba(255,255,255,0.2);
+border-radius: 5px;
+animation-name: openDetails;
+animation-duration: .25s;
+}
+
+details {
+	background: rgba(255,255,255,0.2);
+	border-radius: 5px;
+	animation-name: closeDetails;
+	animation-duration: .25s;
+}
+
+summary {
+border-radius: 5px;
+cursor: pointer;
+font-size: .8em;
+font-weight: bold;
+margin: -1%;
+padding: 8px 0;
+position: relative;
+}
+
+summary::-webkit-details-marker {
+display: none
+}
+
+summary:before {
+border-radius: 5px;
+content: '+';
+color: #363636;
+display: block;
+float: left;
+font-size: 1.5em;
+font-weight: bold;
+margin: -2px 10px 0 10px;
+padding: 0;
+text-align: center;
+width: 20px;
+}
+
+details[open] summary:before {
+content: '-';
+margin-top: -4px;
+}
+
+/*Кнопки*/
+.close {
+	display: none;
+}
+
+.open--active {
+	display: none;
+}
+
+.close--active {
+	display: block;
+}
+
+button {
+    width: 20%;
+    margin-left: 20px;
+    margin-top: 20px;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: rgba(255,255,255,.2);
+    font-weight: 700;
+    cursor: pointer;
+}
+button:hover {
+	color: #fff;
+}
