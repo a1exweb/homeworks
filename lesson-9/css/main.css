@@ -1,0 +1,27 @@
+body {
+  color: #333333;
+  font-family: "Tahoma", sans-serif;
+  font-weight: 700;
+}
+h1 {
+  margin-top: 70px;
+  margin-bottom: 81px;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.block-icon {
+  text-align: center;
+}
+.image {
+  margin-bottom: 20px;
+  width: 82px;
+  height: 82px;
+}
+.image img {
+  max-width: 82px;
+  max-height: 82px;
+}
+.description {
+  font-size: 16px;
+}
