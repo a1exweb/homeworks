@@ -53,8 +53,13 @@ img {
   max-width: 86px;
   max-height: 86px;
 }
+.people-photo {
+    max-width: 362px;
+    max-height: 362px;
+}
 .people-photo img {
-  max-height: 231px;
+  width: 362px;
+  height: 231px;
 }
 .footer {
   background-color: #32325f;
