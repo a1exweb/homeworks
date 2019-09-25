@@ -207,7 +207,7 @@ button {
 button:hover {
 	color: #fff;
 }
-@keyframes rigthSide{
+@keyframes rigthSide {
 	0% {
 		overflow-x: hidden;
 		transform: translateX(100%);
