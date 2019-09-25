@@ -1,3 +1,9 @@
+@media (max-width: 1140px) {
+  .people-photo img {
+    max-width: 312px;
+    max-height: 204px;
+  }
+}
 @media (max-width: 576px) {
   .main-text, .section-heading, .about, .people, .footer {
     text-align: center;
