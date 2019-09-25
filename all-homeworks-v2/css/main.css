@@ -207,3 +207,17 @@ button {
 button:hover {
 	color: #fff;
 }
+@keyframes rigthSide{
+	0% {
+		overflow-x: hidden;
+		transform: translateX(100%);
+	}
+	100% {
+		overflow-x: hidden;
+		transform: translateX(0);
+	}
+}
+body {
+	animation-name: rigthSide;
+	animation-duration: 1.5s;
+}
