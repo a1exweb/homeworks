@@ -1,5 +1,5 @@
 @media (max-width: 576px) {
-  .main-text .section-heading, .about, .people, .footer {
+  .main-text, .section-heading, .about, .people, .footer {
     text-align: center;
   }
 }
