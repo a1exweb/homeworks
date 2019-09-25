@@ -135,7 +135,7 @@ details[open] {
 background: rgba(255,255,255,0.2);
 border-radius: 5px;
 animation-name: openDetails;
-animation-duration: .25s;
+animation-duration: .7s;
 }
 
 details {
