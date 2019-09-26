@@ -1,0 +1,145 @@
+$color: #33aaff
+// Сайт для настройки darken & lighten
+// http://scg.ar-ch.org/
+// Сайт для настройки adjust-hue
+// http://hslpicker.com/#3af
+// http://hslpicker.com/#f34
+// 355 - 205 = 150
+// Сайт для настройки grayscale & desaturate
+// https://pinetools.com/greyscale-desaturate-color
+
+body, p, h1, h2, h3, h4
+  margin: 0
+  padding: 0
+  font-family: Arial, Helvetica, sans-serif
+
+.header
+  background-color: darken($color, 50)
+  padding: 15px 0
+  color: lighten($color, 40)
+  &__title
+    font-size: 18px
+    font-weight: 700
+    line-height: 47px
+  &__callback
+    text-align: right
+.section
+  padding: 70px 0
+  text-align: center
+  &__title
+    font-size: 36px
+    font-weight: 700
+    color: darken($color, 50)
+    span
+      color: adjust-hue($color, 150)
+  &__underline
+    margin: 10px auto
+    width: 200px
+    height: 2px
+    background-color: $color
+.coral
+  color: adjust-hue($color, 150)
+.main
+  background-color: lighten($color, 30)
+  position: relative
+  h1
+    margin-bottom: 25px
+    font-size: 60px
+    font-weight: 300
+    text-transform: uppercase
+    color: darken($color, 50)
+  .sep
+    margin: 25px auto
+    width: 20px
+    height: 20px
+    border-radius: 50%
+    background-color: lighten($color, 40)
+  h3
+    font-size: 36px
+    font-weight: 300
+    color: darken($color, 50)
+  &__location
+    margin: 24px auto 21px
+    width: 300px
+    height: 64px
+    font-size: 18px
+    line-height: 64px
+    color: $color
+    border: 1px solid darken($color, 50)
+  .comment
+    margin-top: 55px
+    color: desaturate($color, 100)
+    font-size: 14px
+    line-height: 18px
+.problems
+  &__list
+    text-align-last: left
+    ul
+      list-style: none
+      li
+        min-height: 100px
+        font-size: 18px
+        font-weight: 300
+        color: darken($color, 50)
+        &::before
+          position: relative
+          right: 30px
+          top: 25px
+          content: ''
+          display: block
+          width: 20px
+          height: 20px
+          background-color: $color
+          border-radius: 50%
+  &__wrapper
+    margin: 0 auto
+    padding: 30px
+    max-width: 700px
+    border: 2px solid $color
+    p
+      margin-bottom: 10px
+      font-size: 24px
+      color: darken($color, 50)
+.prove
+  background-color: lighten($color, 30)
+  &__img
+    margin: 25px auto 10px
+    min-height: 70px
+  img
+    border-bottom: 1px solid $color
+.footer
+  padding: 15px 0
+  font-size: 14px
+  font-weight: 300
+  background-color: darken($color, 50)
+  &__left
+    color: desaturate($color, 50)
+    opacity: 0.5
+  &__right
+    text-align: right
+    color: $color
+    a
+      color: $color
+      text-decoration: 
+      &:hover
+        text-decoration: underline
+.button
+  padding: 10px 30px
+  display: inline-block
+  cursor: pointer
+  font-size: 14px
+  font-weight: 700
+  text-align: center
+  text-transform: uppercase
+  color: lighten($color, 40)
+  background-color: adjust-hue($color, 150)
+  border: 1px solid adjust-hue($color, 150)
+  border-radius: 25px
+  &__start
+    margin-top: 20px
+  &:hover
+    box-shadow: 0 0 25px desaturate($color, 100)
+    background-color: $color
+    border: 1px solid lighten($color, 30)
+  &:focus
+    outline: none
