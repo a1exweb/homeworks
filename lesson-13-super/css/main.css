@@ -1,0 +1,95 @@
+body {
+  font-family: 'Roboto Slab', serif;
+}
+
+.header {
+  height: 780px;
+  background: url(../img/bg.png) no-repeat;
+}
+
+.header-wrap {
+  padding-top: 182px;
+  margin-left: 388px;
+}
+
+.header-title {
+  margin-bottom: 101px;
+}
+
+.header-title h1 {
+  margin-bottom: 40px;
+  color: #7c6db0;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 59px;
+}
+
+.header-title span {
+  margin-left: 2px;
+  padding: 9px 20px 13px 22px;
+  color: #ffffff;
+  font-size: 36px;
+  line-height: 30px;
+  font-weight: 700;
+  line-height: 59px;
+  background: #7c6db0;
+}
+
+.header-subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 118px;
+}
+
+.header-subtitle img {
+  margin-left: 10px;
+  margin-right: 38px;
+}
+
+.header-subtitle span {
+  margin-top: 2px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.header-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-buttons .btn-get {
+  margin-left: 2px;
+  padding: 28px 50px 28px 60px;
+  -webkit-box-shadow: 0 2px 16px rgba(0, 215, 255, 0.44);
+          box-shadow: 0 2px 16px rgba(0, 215, 255, 0.44);
+  background-color: #1eb8b0;
+  background-image: linear-gradient(-230deg, #01c4e0 0%, #01b3e0 100%);
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.header-buttons .btn-look {
+  margin-left: 29px;
+  padding: 28px 74px;
+  -webkit-box-shadow: 0 2px 16px rgba(0, 215, 255, 0.44);
+          box-shadow: 0 2px 16px rgba(0, 215, 255, 0.44);
+  border: 2px solid #01c4e0;
+  background: transparent;
+  color: #01b3e0;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.header-image {
+  position: absolute;
+  top: 33px;
+  right: 131px;
+}
+/*# sourceMappingURL=main.css.map */
