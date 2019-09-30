@@ -3,6 +3,9 @@ body {
 }
 
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 780px;
   background: url(../img/bg.png) no-repeat;
 }
@@ -88,8 +91,7 @@ body {
 }
 
 .header-image {
-  position: absolute;
-  top: 33px;
-  right: 131px;
+  margin-top: 34px;
+  margin-left: 71px;
 }
 /*# sourceMappingURL=main.css.map */
