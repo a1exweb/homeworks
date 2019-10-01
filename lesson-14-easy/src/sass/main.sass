@@ -45,6 +45,7 @@ body
         justify-content: center
         width: 276px
         height: 250px
+        margin: 0 auto
     &__description
         display: block
         margin: 30px 0
@@ -63,19 +64,29 @@ body
         padding: 12px 24px
         background: transparent
         color: $green-color
-        +btn
       &_full
         padding: 12px 24px
         color: #ffffff
         background: $green-color
-        +btn
+.button
+  +btn
 @media (max-width: 1200px)
   .main
     height: auto
     &-images
-      flex-direction: column
+      flex-wrap: wrap
       &__block-image
         margin-bottom: 50px
         margin-right: 0
-      
+        width: 50%
+      &__block-buttons
+        justify-content: center
+@media (max-width: 768px)
+  .main
+    &-images
+      flex-direction: column
+      &__block-image
+        min-width: 276px
+      &__block-buttons
+        justify-content: space-between
     

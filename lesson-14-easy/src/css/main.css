@@ -66,6 +66,7 @@ body {
           justify-content: center;
   width: 276px;
   height: 250px;
+  margin: 0 auto;
 }
 
 .main-images__description {
@@ -91,17 +92,15 @@ body {
   padding: 12px 24px;
   background: transparent;
   color: #66cc66;
-  font-size: 14px;
-  font-weight: bold;
-  text-transform: uppercase;
-  border: 2px solid #66cc66;
-  cursor: pointer;
 }
 
 .main-images__button_full {
   padding: 12px 24px;
   color: #ffffff;
   background: #66cc66;
+}
+
+.button {
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
@@ -114,14 +113,35 @@ body {
     height: auto;
   }
   .main-images {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main-images__block-image {
+    margin-bottom: 50px;
+    margin-right: 0;
+    width: 50%;
+  }
+  .main-images__block-buttons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-images {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
   .main-images__block-image {
-    margin-bottom: 50px;
-    margin-right: 0;
+    min-width: 276px;
+  }
+  .main-images__block-buttons {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 /*# sourceMappingURL=main.css.map */
