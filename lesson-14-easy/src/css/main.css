@@ -113,13 +113,16 @@ body {
     height: auto;
   }
   .main-images {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
   .main-images__block-image {
     margin-bottom: 50px;
     margin-right: 0;
-    width: 50%;
+    width: 40%;
   }
   .main-images__block-buttons {
     -webkit-box-pack: center;
