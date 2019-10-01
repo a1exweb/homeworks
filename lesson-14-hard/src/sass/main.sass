@@ -1,0 +1,106 @@
+$white-color: #ffffff
+$main-color: #1a1820
+=btn
+  display: block
+  margin: 0 auto
+  box-shadow: 0 8px 13px rgba(0, 0, 0, 0.04)
+  border-radius: 8px
+  color: $white-color
+  border: 1px solid #ffba15
+  background-color: #ffb504
+  background-image: linear-gradient(to top, #f5ad00 0%, #ffb504 100%)
+  font-weight: bold
+  text-transform: uppercase;
+  cursor: pointer
+*
+  box-sizing: border-box
+  padding: 0
+  margin: 0
+  outline: none
+body
+  font-family: sans-serif
+.prices
+  margin: 50px 0
+  padding: 120px 0
+  background: url(../img/bg_prices.jpg)
+  &__title
+    margin-bottom: 50px
+    color: $white-color
+    font-size: 36px
+    font-weight: bold
+    text-align: center
+  &__subtitle
+    margin-bottom: 90px
+    color: $white-color
+    font-size: 18px
+    font-weight: 400
+    text-align: center
+  &__block-items
+    display: flex
+    justify-content: center
+  &-item
+    padding: 50px
+    background: $white-color
+    margin-right: 40px
+    &:last-child
+      margin-right: 0
+    &__title
+      margin-top: 50px
+      margin-bottom: 30px
+      color: $main-color
+      font-size: 18px
+      font-weight: bold
+      text-align: center
+    &__price
+      display: block
+      margin: 30px 0
+      color: $main-color
+      font-weight: bold
+      font-size: 28px
+      text-align: center
+    &__list
+      min-height: 145px
+      margin-bottom: 20px
+      list-style: none
+    &__string
+      display: block
+      margin-bottom: 10px
+      text-align: center
+    &__icon
+      display: inline-block
+      margin-right: 5px
+    &__text
+      color: $main-color
+      font-size: 18px
+    &__button
+      padding: 25px 60px
+      +btn
+
+.additional-service
+  margin-bottom: 50px
+  padding: 120px 0
+  color: #fcfcfc
+  background: #006b00
+  &__title
+    margin-bottom: 60px
+    font-size: 36px
+    font-weight: bold
+    text-align: center
+  &__subtitle
+    margin-bottom: 90px
+    font-size: 19px
+    text-align: center
+  &__block-items
+    display: flex
+    justify-content: center
+  &-item
+    display: flex
+    flex-direction: column
+    margin-right: 110px
+    &:last-child
+      margin-right: 0
+    &__image
+      margin-bottom: 70px
+    &__button
+      padding: 20px 50px
+      +btn
