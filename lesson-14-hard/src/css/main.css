@@ -60,6 +60,11 @@ body {
   text-align: center;
 }
 
+.prices-item__image {
+  width: 300px;
+  height: 200px;
+}
+
 .prices-item__price {
   display: block;
   margin: 30px 0;
@@ -171,5 +176,39 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+@media (max-width: 1300px) {
+  .prices {
+    padding: 30px 0;
+  }
+  .prices__title, .prices__subtitle {
+    margin: 30px auto;
+  }
+  .prices__block-items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .prices-item, .prices-item:last-child {
+    margin: 20px auto;
+  }
+  .additional-service {
+    padding: 30px 0;
+  }
+  .additional-service__title, .additional-service__subtitle {
+    width: 90%;
+    margin: 20px auto;
+  }
+  .additional-service__block-items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .additional-service-item, .additional-service-item:last-child {
+    margin: 30px auto;
+  }
 }
 /*# sourceMappingURL=main.css.map */
