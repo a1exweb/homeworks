@@ -42,7 +42,7 @@ body {
 }
 
 .prices-item {
-  padding: 50px;
+  padding: 0 50px 50px 50px;
   background: #ffffff;
   margin-right: 40px;
 }
@@ -241,7 +241,7 @@ body {
     font-size: 14px;
   }
   .prices-item {
-    padding: 20px;
+    padding: 0 20px 20px 20px;
     max-width: 250px;
   }
   .prices-item__title {
