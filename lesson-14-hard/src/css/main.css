@@ -170,6 +170,7 @@ body {
 
 .additional-service-item__image {
   max-width: 330px;
+  max-heigh: 174px;
 }
 
 .additional-service-item__image-wrap {
@@ -181,6 +182,7 @@ body {
           justify-content: center;
   margin-bottom: 70px;
   width: 330px;
+  height: 174px;
 }
 
 .additional-service-item__button {
@@ -267,9 +269,11 @@ body {
   }
   .additional-service-item__image {
     max-width: 200px;
+    max-height: 105px;
   }
   .additional-service-item__image-wrap {
     width: 200px;
+    height: 105px;
   }
 }
 /*# sourceMappingURL=main.css.map */
