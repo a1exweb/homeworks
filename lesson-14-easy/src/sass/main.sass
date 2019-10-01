@@ -1,0 +1,67 @@
+$main-color: #666666
+$green-color: #66cc66
+=btn
+  font-size: 14px
+  font-weight: bold
+  text-transform: uppercase
+  border: 2px solid $green-color
+  cursor: pointer
+*
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+body
+  font-family: sans-serif
+.container
+  max-width: 1176px
+  margin: 0 auto
+.main
+  display: flex
+  height: 100vh
+  background: #f6f6f6
+  &-block
+    margin-top: 180px
+  &__title
+    margin-bottom: 75px
+    color: $main-color
+    font:
+      size: 35px
+      weight: 700
+    text:
+      align: center
+      transform: uppercase
+  &-images
+    display: flex
+    justify-content: space-between
+    &__block-image
+      margin-right: 24px
+      &:last-child
+        margin-right: 0
+    &__image
+      max-width: 276px
+    &__description
+        display: block
+        margin: 30px 0
+        color: $main-color
+        font:
+          size: 18px
+          weight: bold
+        text:
+          align: center
+          transform: uppercase
+    &__block-buttons
+      display: flex
+      justify-content: space-between
+    &__button
+      &_second
+        padding: 12px 24px
+        background: transparent
+        color: $green-color
+        +btn
+      &_full
+        padding: 12px 24px
+        color: #ffffff
+        background: $green-color
+        +btn
+      
+    
