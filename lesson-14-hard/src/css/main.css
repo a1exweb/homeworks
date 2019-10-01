@@ -187,6 +187,9 @@ body {
 
 .additional-service-item__button {
   padding: 20px 50px;
+}
+
+.button {
   display: block;
   margin: 0 auto;
   -webkit-box-shadow: 0 8px 13px rgba(0, 0, 0, 0.04);
