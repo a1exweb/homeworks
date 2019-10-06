@@ -311,3 +311,15 @@ summary:hover .plus{
 	-moz-animation: overlay 11s ease infinite;
 	animation: overlay 11s ease infinite;
 }
+
+.blog-link {
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+.copy {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 10px;
+	margin-right: 5px;
+}
