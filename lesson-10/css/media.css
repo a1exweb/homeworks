@@ -9,3 +9,23 @@
     text-align: center;
   }
 }
+
+@media (max-width: 450px) {
+  .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  .buttons a:first-child {
+    margin-right: 0 !important;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 380px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar-brand {
+    margin-right: 0;
+  }
+}
