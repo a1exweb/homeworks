@@ -10,6 +10,7 @@ body {
 	max-width: 1800px;
 	font-family: "Tahoma", "Arial", sans-serif;
 	background: url("../img/background.jpg") #d0d6e6 no-repeat bottom fixed;
+	background-size: contain;
 }
 
 a {
@@ -70,7 +71,7 @@ main {
 }
 
 a:hover {
-	color: #fff;
+	color: red;
 	transition: 0.5s;
 }
 
@@ -94,12 +95,14 @@ details[open] a {
 }
 
 details a:hover {
-    color:  #fff;
+    color:  red;
 }
 
 summary:hover {
-    color: #fff;
+  color: red;
 }
+
+
 
 details {
 color: #363636;
@@ -146,13 +149,13 @@ details {
 }
 
 summary {
-border-radius: 5px;
-cursor: pointer;
-font-size: .8em;
-font-weight: bold;
-margin: -1%;
-padding: 8px 0;
-position: relative;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: .8em;
+	font-weight: bold;
+	margin: -1%;
+	padding: 8px 0;
+	position: relative;
 }
 
 summary::-webkit-details-marker {
@@ -203,7 +206,7 @@ button {
     cursor: pointer;
 }
 button:hover {
-	color: #fff;
+	color: red;
 }
 @keyframes rigthSide {
 	0% {
@@ -215,7 +218,96 @@ button:hover {
 		transform: translateX(0);
 	}
 }
-body {
+header, main {
 	animation-name: rigthSide;
 	animation-duration: 1.5s;
+}
+@media (max-width: 992px) {
+	h1, h2 {
+		font-size: 18px;
+		text-align: center;
+	}
+	main {
+		height: 35%;
+	}
+	.main-wrap {
+		width: 100%;
+	}
+}
+
+@media (max-width: 768px) {
+	main {
+		height: 40%;
+	}
+}
+
+@media (max-width: 568px) {
+	main {
+		height: 55%;
+	}
+	.main-wrap {
+		width: 100%;
+	}
+}
+
+@keyframes rotatePlus {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+summary:hover .plus{
+	color: red;
+	animation: rotatePlus 1s linear infinite;
+	transform-origin: 50% 50%;
+}
+
+.plus {
+	color: #363636;
+	justify-content: center;
+  align-items: center;
+	float: left;
+	width: 20px;
+	height: 20px;
+	font-size: 1.5em;
+	font-weight: bold;
+	margin: -2px 10px 0 10px;
+	padding: 0;
+	text-align: center;
+	width: 20px;
+}
+
+
+@-webkit-keyframes overlay {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes overlay {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes overlay {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+.overlay {
+	content: '';
+	opacity: .2;
+	z-index: -1;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	/* background-color: #fff; */
+	background: linear-gradient(270deg, #005eff, #3e85ff, #639dff, #a5c6ff);
+	background-size: 1400% 1400%;
+	
+	-webkit-animation: overlay 11s ease infinite;
+	-moz-animation: overlay 11s ease infinite;
+	animation: overlay 11s ease infinite;
 }
