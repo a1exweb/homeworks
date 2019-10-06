@@ -11,6 +11,7 @@ body {
 	font-family: "Tahoma", "Arial", sans-serif;
 	background: url("../img/background.jpg") #d0d6e6 no-repeat bottom fixed;
 	background-size: contain;
+	overflow: hidden;
 }
 
 a {
@@ -306,7 +307,6 @@ summary:hover .plus{
 	/* background-color: #fff; */
 	background: linear-gradient(270deg, #005eff, #3e85ff, #639dff, #a5c6ff);
 	background-size: 1400% 1400%;
-	
 	-webkit-animation: overlay 11s ease infinite;
 	-moz-animation: overlay 11s ease infinite;
 	animation: overlay 11s ease infinite;
