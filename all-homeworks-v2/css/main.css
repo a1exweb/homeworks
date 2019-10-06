@@ -250,7 +250,7 @@ header, main {
 		width: 100%;
 	}
 }
-
+/*
 @keyframes rotatePlus {
 	0% {
 		transform: rotate(0deg);
@@ -280,7 +280,7 @@ summary:hover .plus{
 	text-align: center;
 	width: 20px;
 }
-
+*/
 
 @-webkit-keyframes overlay {
     0%{background-position:0% 50%}
