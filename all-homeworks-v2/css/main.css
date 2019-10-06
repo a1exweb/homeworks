@@ -303,7 +303,7 @@ summary:hover .plus{
 	z-index: -1;
 	position: absolute;
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	/* background-color: #fff; */
 	background: linear-gradient(270deg, #005eff, #3e85ff, #639dff, #a5c6ff);
 	background-size: 1400% 1400%;
