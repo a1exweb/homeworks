@@ -25,9 +25,10 @@ fieldset
   position: relative
   display: flex
   justify-content: center
-  padding: 54px 28px 30px 29px
+  flex-direction: column
+  padding: 54px 28px 25px 29px
   width: 320px
-  height: 370px
+  // height: 370px
   border: 1px solid $grey
   background-color: #ffffff
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03)
@@ -62,13 +63,15 @@ input
   +bg
 #password
   margin-bottom: 19px
-
+#password-second
+  margin-bottom: 0
 input::placeholder
   padding-left: 2px
 button
   margin-top: 34px
   width: 100%
-  height: 45px
+  padding-top: 14px
+  padding-bottom: 13px
   border: 1px solid #dcdcdc
   background-color: $blue
   border-radius: 5px
