@@ -128,10 +128,6 @@ img {
   }
 }
 
-.arrows__left:hover, .arrows__right:hover {
-  cursor: pointer;
-}
-
 .navbar {
   padding: 8px 0;
 }

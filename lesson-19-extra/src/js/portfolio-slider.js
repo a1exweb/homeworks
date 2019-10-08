@@ -16,4 +16,5 @@ $(function(){
           }
       }
   });
+  $('.owl-nav').addClass('arrows portfolio__arrows');
 });
