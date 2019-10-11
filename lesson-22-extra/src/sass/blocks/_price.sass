@@ -1,0 +1,93 @@
+.price
+  padding-top: 135px
+  &__title
+    max-width: 520px
+    margin: auto
+    margin-bottom: 50px
+    font-size: 30px
+    line-height: 45px
+  &__subtitle
+    margin-bottom: 59px
+    font-size: 20px
+    text-align: center
+  &__card
+    margin-bottom: 30px
+.card
+  text-align: center
+  border: 1px solid $border-card
+  transition: .2s
+  &:hover
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1)
+    .card__image::before
+      opacity: .8
+  &__text
+    padding: 32px 40px
+  &__title
+    margin-top: 0
+    margin-bottom: 30px
+    font-size: 18px
+  &__image
+    position: relative
+    display: block
+    &::before
+      position: absolute
+      content: '' 
+      top: -4px
+      left: 0
+      width: 100%
+      height: 100%
+      background-image: linear-gradient(to top, #ffd200 0%, rgba(255, 255, 255, 0) 100%)
+      opacity: 0
+      transition: .2s
+  &__link
+    position: relative
+    display: inline-block
+    +bold
+    text-decoration: none
+    color: $text-color
+    font-size: 16px
+    &:hover 
+      &:after
+        height: 12px
+    &::after
+      content: ''
+      position: absolute
+      left: 0
+      bottom: -4px
+      display: block
+      height: 3px
+      width: 100%
+      background-color: $main-color
+      transition: .2s
+      z-index: -1
+  &s
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+@media (max-width: 1200px)
+  .card
+    flex-basis: 48%
+@media (max-width: 768px)
+  .price
+    padding-top: 63px
+    padding-bottom: 0
+    &__title
+      margin-bottom: 25px
+      max-width: 250px
+      font-size: 18px
+      line-height: 21px
+    &__subtitle
+      font-size: 14px
+  .card
+    width: auto
+    flex-basis: 100%
+    max-width: 271px
+    margin-bottom: 36px
+    &__text
+      padding: 27px
+    &__title
+      font-size: 14px
+      margin-bottom: 10px
+    &s
+      justify-content: center
+    

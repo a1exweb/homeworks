@@ -1,0 +1,102 @@
+*
+  box-sizing: border-box
+  outline: none
+body 
+  +reg
+img
+  max-width: 100%
+.container
+  width: 1170px
+  margin: auto
+
+@media (max-width: 1200px)
+  .container
+    width: 720px
+@media (max-width: 768px)
+  .container
+    max-width: 580px
+    width: 90%
+
+.button
+  padding: 19px 30px 17px
+  font-size: 13px
+  font-weight: bold
+  border-radius: 10px
+  background-color: $main-color
+  border: none
+  &:hover
+    background-color: lighten($main-color, 10%)
+    cursor: pointer
+  &__pageup
+    position: fixed
+    bottom: 20px
+    right: 20px
+    display: none
+    justify-content: center
+    align-items: center
+    padding: 0
+    width: 30px
+    height: 30px
+    font-size: 20px
+    & > i
+      width: 20px
+      height: 20px
+.section
+  padding: 52px 0
+  &-title
+    font-size: 24px
+    text-align: center
+    +bold
+  &-subtitle
+    display: block
+    font-size: 16px
+@media (max-width: 768px)
+  .button
+    &__pageup
+      bottom: 10px
+      right: 10px
+  .section
+    padding: 78px 0
+.input
+  padding: 23px
+  border: 1px solid $border-input
+  font-size: 15px
+  border-radius: 10px
+  &:focus
+    border-color: $main-color
+@media (max-width: 568px)
+  .button
+    &__pageup
+      bottom: 5px
+      right: 5px
+      width: 25px
+      height: 25px
+.arrows
+  &__left, &__right
+    &:hover
+      cursor: pointer
+.invalid, .invalid-offer
+  border: 1px solid red
+div.invalid, div.invalid-offer
+  border: 0
+  color: red
+.offer
+  &__form
+    position: relative
+div#username-error.invalid-offer
+    position: absolute
+    top: 70px
+    left: 5px
+div#phone-error.invalid-offer
+    position: absolute
+    top: 70px
+    left: 260px
+div#username-error.invalid, div#phone-error.invalid, div#usermail-error.invalid
+  margin-top: -15px
+
+@media (max-width: 1200px)
+  div#username-error.invalid-offer
+    top: 65px
+  div#phone-error.invalid-offer
+    top: 150px
+    left: 5px
