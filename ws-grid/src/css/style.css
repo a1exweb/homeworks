@@ -1,0 +1,160 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #efedf0;
+}
+
+.container {
+  max-width: 1096px;
+  margin: 0 auto;
+}
+
+.page {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+  margin-top: 83px;
+}
+
+.page__banner {
+  margin-top: 24px;
+  margin-left: 47px;
+}
+
+.block-card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 72px 38px;
+      grid-template-rows: 72px 38px;
+  text-align: center;
+  padding: 25px;
+  background-color: #fff;
+  width: 320px;
+  height: 240px;
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.14);
+          box-shadow: 0 0 6px rgba(0, 0, 0, 0.14);
+}
+
+.block-card__image-wrap {
+  margin: auto;
+  width: 34px;
+  height: 34px;
+}
+
+.block-card__title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.block-card__text {
+  color: #555555;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.block-cards {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 25px;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.question {
+  display: inline-block;
+  padding: 5px 14px;
+  background-color: #000;
+  color: #fff;
+}
+
+.banner__logo {
+  margin-top: 5px;
+}
+
+.logo {
+  font-size: 42px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.logo__word-our {
+  color: #6fa40b;
+}
+
+.logo__word-service {
+  font-weight: 100;
+}
+
+.subtitle {
+  color: #555555;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 670px;
+  }
+  .page {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .page__block-cards {
+    margin: auto;
+    margin-bottom: 83px;
+  }
+  .page__banner {
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .page__subtitle {
+    margin: auto;
+  }
+  .subtitle {
+    max-width: 280px;
+  }
+  .banner {
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+  }
+}
+
+@media (max-width: 700px) {
+  .page__banner {
+    text-align: center;
+  }
+  .block-cards {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 400px) {
+  .page__banner {
+    text-align: center;
+  }
+  .page__subtitle {
+    margin: auto;
+  }
+  .block-card {
+    padding: 10px;
+    width: 250px;
+  }
+  .block-cards {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+/*# sourceMappingURL=style.css.map */
