@@ -389,6 +389,7 @@ html {
 }
 .m-menu__active {
   transform: translateX(0);
+  padding: 0;
 }
 .close-menu {
   display: none;
