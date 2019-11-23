@@ -107,6 +107,7 @@ main .wrap-main .block-icons {
 .icon {
 	display: flex;
 	justify-content: center;
+	align-items: flex-end;
 	height: 58px;
 	width: 58px;
     	margin: auto;
