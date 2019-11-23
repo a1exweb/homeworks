@@ -108,6 +108,8 @@ main .wrap-main .block-icons {
 	display: flex;
 	justify-content: center;
 	height: 58px;
+	width: 58px;
+    	margin: auto;
 }
 
 .icon-wrap img {
